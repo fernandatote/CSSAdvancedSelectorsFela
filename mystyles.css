@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC');
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?jb0vjt');
+  src:  url('fonts/icomoon.eot?jb0vjt#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?jb0vjt') format('truetype'),
+    url('fonts/icomoon.woff?jb0vjt') format('woff'),
+    url('fonts/icomoon.svg?jb0vjt#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body, div, span, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*task 1*/
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+/*task 1*/
+header h1 {
+  color: #788880;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+/*task 1*/
+article h1 {
+  font-size: 7rem;
+  font-weight: 200;
+  margin: 0;
+}
+
+/*task 1*/
+header h1 span {
+  color: #c46d3b;
+}
+
+/*task 1*/
+article h2 {
+  font-size: 3rem;
+}
+
+/*task 1*/
+h3 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  letter-spacing: 2px;
+  /*text-transform: uppercase;*/
+}
+
+/*task 2*/
+header nav ul li {
+  border-right: 1px solid #c46d3b;
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*task 2*/
+header nav ul li:last-child {
+   border-right: none;
+}
+
+/*task 3*/
+article h1 + p::first-line {
+  font-weight: bold;
+}
+
+/*task 3*/
+article h1 + p::first-letter {
+  color: white;
+  background-color: black;
+  padding: 5px 8px;
+  margin-right: 3px;
+  float: left;
+  font-size: 350%;
+  line-height: 80%;
+}
+
+/*task 4*/
+h2 + p {
+  font-style: italic;
+  font-size: 1.77rem;
+  margin-top: 0;
+}
+
+/*task 6*/
+a[href*="companies"] {
+  color: slateblue;
+}
+
+/*task 6*/
+a[href*="originators"] {
+  color: deepskyblue;
+}
+
+/*task 6*/
+a[href*="contemporary"] {
+  color: hotpink;
+}
+
+/*task 7*/
+header {
+  background-image: url(fela-images/fela1.jpg), linear-gradient(to right, #000, #555); /*to show gradient and img at same time*/
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*task 9*/
+h2 {
+ overflow: auto;
+ clear: both;
+ margin-bottom: 10px;
+ margin-top: 20px;
+}
+
+/*task 10*/
+header nav ul li:nth-child(1)::before {
+  content: "\e900";
+  color: white;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  background-color: black;
+  padding: 5px;
+}
+
+/*task 10*/
+header nav ul li:nth-child(2)::before {
+  content: "\e910";
+  color: white;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  background-color: black;
+  padding: 5px;
+}
+
+/*task 10*/
+header nav ul li:nth-child(3)::before {
+  content: "\e912";
+  color: white;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  background-color: black;
+  padding: 5px;
+}
+
+/*task 10*/
+header nav ul li:nth-child(4)::before {
+  content: "\e986";
+  color: white;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  background-color: black;
+  padding: 5px;
+}
+
+/*task 10*/
+header nav ul li:nth-child(5)::before {
+  content: "\e945";
+  color: white;
+  display: block;
+  font-family: 'icomoon';
+  speak: none;
+  background-color: black;
+  padding: 5px;
+}
+
+/*task 10*/
+.tags::before {
+  content: "\e935";
+  width: 10px;
+  font-family: 'icomoon';
+  speak: none;
+}
+
+
+
+/* EXTRA */
+a {
+  text-decoration: none;
+}
+
+article {
+  margin: 50px 5%;
+}
+
+section.biographical-detail img {
+  max-width: 280px;
+}
+
+h4 {
+  color: white;
+}
+
+header ul li a {
+  color: white;
+}
+
+header ul {
+  padding: 0;
+}
+
+/*MEDIA QUERIES===============================*/
+
+@media screen and (max-width: 820px){
+  /*task 1*/
+  article h2 {
+    font-size: 2rem;
+  }
+
+  /*task 5*/
+  h3 + img {
+      display: block;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      float: none !important;
+  }
+
+  /*task 7*/
+  header {
+    background: linear-gradient(to right, #000, #555); /*to show gradient and img at same time*/
+  }
+
+  /*task 9*/
+  h2::before {
+    content: "\2756";
+    color: hotpink;
+    display: block;
+  }
+
+  /* extra */
+  h2, h3 {
+    text-align: center;
+  }
+
+  html {
+    font-size: initial;
+  }
+
+  img {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    margin-bottom: 5px;
+  }
+
+  article {
+    width: 90%;
+  }
+}
